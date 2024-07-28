@@ -77,7 +77,7 @@ public class PasswordGeneratorGUI extends JFrame{
 
 
         // symbols toggle
-        JToggleButton symbolsToggle = new JToggleButton("Upper Case");
+        JToggleButton symbolsToggle = new JToggleButton("Symbols");
         symbolsToggle.setFont(new Font("Dialog", Font.BOLD, 25));
         symbolsToggle.setBounds(282, 373, 225, 56);
         add(symbolsToggle);
