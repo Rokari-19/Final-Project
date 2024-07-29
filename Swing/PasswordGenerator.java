@@ -1,7 +1,7 @@
 package Swing;
 
 import java.util.Random;
-
+// me
 public class PasswordGenerator {
     public static final String LOWERCASE_CHARS = "abcdefghijklmnopqrstuvwxyz";
     public static final String UPPERCASE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

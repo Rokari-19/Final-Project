@@ -1,10 +1,11 @@
 package Swing;
 
 public class App {
-    public static void main(String[] args) {
-        PasswordGeneratorGUI pgGUI = new PasswordGeneratorGUI();
-        pgGUI.setVisible(true);
+    // peacejohn20
+    // public static void main(String[] args) {
+    //     PasswordGeneratorGUI pgGUI = new PasswordGeneratorGUI();
+    //     pgGUI.setVisible(true);
         
-    }
+    // }
     
 }
