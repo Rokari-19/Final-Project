@@ -87,62 +87,62 @@ public class PasswordGeneratorGUI extends JFrame{
 
         // Oha Chidera Peter || Chidex550
         // chidera, uncomment evrything from here downwards and then delete this line of instructions
-//         JToggleButton symbolsToggle = new JToggleButton("Symbols");
-//         symbolsToggle.setFont(new Font("Dialog", Font.BOLD, 25));
-//         symbolsToggle.setBounds(282, 373, 225, 56);
-//         add(symbolsToggle);
+         JToggleButton symbolsToggle = new JToggleButton("Symbols");
+         symbolsToggle.setFont(new Font("Dialog", Font.BOLD, 25));
+         symbolsToggle.setBounds(282, 373, 225, 56);
+         add(symbolsToggle);
 
 
 
 //         // generate button
-//         JButton generateButton = new JButton("Generate Password");
-//         generateButton.setFont(new Font("Dialog", Font.BOLD, 15));
-//         generateButton.setBounds(25, 477, 222, 41);
-//         generateButton.addActionListener(new ActionListener() {
-//             @Override
-//             public void actionPerformed(ActionEvent e) {
-//                 if (passLengthInput.getText().length() <= 0) return;
-//                 boolean anyToggleSelected = lowerCaseToggle.isSelected() || upperCaseToggle.isSelected() || numbersToggle.isSelected() || symbolsToggle.isSelected();
+         JButton generateButton = new JButton("Generate Password");
+         generateButton.setFont(new Font("Dialog", Font.BOLD, 15));
+         generateButton.setBounds(25, 477, 222, 41);
+         generateButton.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+                 if (passLengthInput.getText().length() <= 0) return;
+                 boolean anyToggleSelected = lowerCaseToggle.isSelected() || upperCaseToggle.isSelected() || numbersToggle.isSelected() || symbolsToggle.isSelected();
 
-//                 int passwordLength = Integer.parseInt(passLengthInput.getText());
-//                 if (anyToggleSelected) {
-//                     String generatedPasword = passgen.GeneratePassword(passwordLength, 
-//                         upperCaseToggle.isSelected(),
-//                         lowerCaseToggle.isSelected(),
-//                         numbersToggle.isSelected(),
-//                         symbolsToggle.isSelected()
-//                     );
-//                 passwordoutput.setText(generatedPasword);
+                 int passwordLength = Integer.parseInt(passLengthInput.getText());
+                 if (anyToggleSelected) {
+                     String generatedPasword = passgen.GeneratePassword(passwordLength, 
+                         upperCaseToggle.isSelected(),
+                         lowerCaseToggle.isSelected(),
+                         numbersToggle.isSelected(),
+                         symbolsToggle.isSelected()
+                     );
+                 passwordoutput.setText(generatedPasword);
 
-//                 };
-//             }
-//         });
+                 };
+             }
+         });
 
 //         add(generateButton);
 
-//         JButton saveButton = new JButton("Save Password");
-//         saveButton.setFont(new Font("Dialog", Font.BOLD, 15));
-//         saveButton.setBounds(282, 477, 222, 41);
-//         saveButton.addActionListener(new ActionListener() {
-//             @Override
-//             public void actionPerformed(ActionEvent e) {
-//                 String password = passwordoutput.getText();
-//                 if (!password.isEmpty()) {
-//                     savePasswordToFile(password, "password.txt");
-//                 }
-//             }
-//         });
-//         add(saveButton);
-//     }
+         JButton saveButton = new JButton("Save Password");
+         saveButton.setFont(new Font("Dialog", Font.BOLD, 15));
+         saveButton.setBounds(282, 477, 222, 41);
+         saveButton.addActionListener(new ActionListener() {
+             @Override
+             public void actionPerformed(ActionEvent e) {
+                 String password = passwordoutput.getText();
+                 if (!password.isEmpty()) {
+                     savePasswordToFile(password, "password.txt");
+                 }
+             }
+         });
+         add(saveButton);
+     }
 
-//     private void savePasswordToFile(String password, String fileName) {
-//         try (FileWriter fileWriter = new FileWriter(fileName)) {
-//             fileWriter.write(password);
-//             JOptionPane.showMessageDialog(this, "Password saved to " + fileName);
-//         } catch (IOException e) {
-//             JOptionPane.showMessageDialog(this, "Error saving password: " + e.getMessage());
-//             e.printStackTrace();
-//         }
-//     }
+     private void savePasswordToFile(String password, String fileName) {
+         try (FileWriter fileWriter = new FileWriter(fileName)) {
+             fileWriter.write(password);
+             JOptionPane.showMessageDialog(this, "Password saved to " + fileName);
+         } catch (IOException e) {
+             JOptionPane.showMessageDialog(this, "Error saving password: " + e.getMessage());
+             e.printStackTrace();
+         }
+     }
 }
 
