@@ -10,7 +10,8 @@ import javax.swing.*;
 public class PasswordGeneratorGUI extends JFrame{
 
     // password generator object 
-    // Biggie06
+    // Biggie06 || big joe uncomment this side of code all the way to just before addGuiComponents
+    
     // private PasswordGenerator passgen;
     // public PasswordGeneratorGUI() {
     //     super("Password Generator");
@@ -85,6 +86,7 @@ public class PasswordGeneratorGUI extends JFrame{
 
 
         // Oha Chidera Peter || Chidex550
+        // chidera, uncomment evrything from here downwards and then delete this line of instructions
 //         JToggleButton symbolsToggle = new JToggleButton("Symbols");
 //         symbolsToggle.setFont(new Font("Dialog", Font.BOLD, 25));
 //         symbolsToggle.setBounds(282, 373, 225, 56);
