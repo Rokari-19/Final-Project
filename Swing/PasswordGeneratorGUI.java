@@ -9,25 +9,25 @@ import java.io.IOException;
 import javax.swing.*;
 public class PasswordGeneratorGUI extends JFrame{
 
-    // password generator object 
-    // Biggie06 || big joe uncomment this side of code all the way to just before addGuiComponents
+     password generator object 
+    // Biggie06 
     
-    // private PasswordGenerator passgen;
-    // public PasswordGeneratorGUI() {
-    //     super("Password Generator");
-    //     setSize(540, 570);
-    //     setResizable(false);
-    //     getContentPane().setBackground(Color.black);
-    //     setLayout(null);
+     private PasswordGenerator passgen;
+     public PasswordGeneratorGUI() {
+        super("Password Generator");
+        setSize(540, 570);
+        setResizable(false);
+        getContentPane().setBackground(Color.black);
+         setLayout(null);
 
-    //     setDefaultCloseOperation(EXIT_ON_CLOSE);
-    //     setLocationRelativeTo(null);
-    //     // pass gen obj init
-    //     passgen = new PasswordGenerator();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+       setLocationRelativeTo(null);
+          pass gen obj init
+        passgen = new PasswordGenerator();
 
 
-    //     addGuiComponents();
-    // }
+         addGuiComponents();
+     }
 
     public void addGuiComponents() {
         babyboywakiks
